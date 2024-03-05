@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <p>
+    <input type="number" name="first_num" id="first_num">
+  </p>
+  <p>
+    <select name="operation" id="calc_operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">X</option>
+      <option value="/">/</option>
+    </select>
+  </p>
+  <p>
+    <input type="number" name="second_num" id="second_num">
+  </p>
+  <p>
+    <button id="calc_action">
+      Click
+    </button>
+  </p>
+
+  <br>
+  <p id="calc_result" style="display: none;">
+    Hello World!
+  </p>
+
+  <script>
+    const btn = document.querySelector('#calc_action')
+    const result = document.querySelector('#calc_result')
+
+    btn.addEventListener('click', () => {
+      result.style.display = 'block'
+    })
+  </script>
+</body>
+</html>
